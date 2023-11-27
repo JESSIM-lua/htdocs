@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Site PHP</title>
+
+</head>
+<body>
+<button id="toggle">Formulaire</button>
+<button onclick="myFunction()" id="darkm">    <label class="switch">
+      <input onclick="myFunction()" type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label></button>
+
+<form action="formulaire.php" method="post" hidden>
+
+
+Entrez la Date: <input type="date" name="date">
+Entrez le nombre d'exemplaire: <select name="var">
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+   <option value="8">8</option>
+</select>
+Entrez votre Nom : <input type="text" name="nom"> Entrez votre Prénom : <input type="text" name="prenom">
+
+<input type="hidden" name="compteurInputs" value="<?php echo $compteurInputs; ?>">
+<div id="conteneurInputs"></div>
+<button id="ajouInput" type="button">Ajouter un Partenaire</button><br>
+Nature des activités :
+<input type="text" name="autre"><br>
+Nom du Partenariat Commercial : 
+<input type="text" name="autre2"><br>
+Siège du Partenariat :
+<input type="text" name="autre3" placeholder=""><br>
+<input type="submit" id="sub">
+</form>
+
+
+
+
+<button id="generatePdf" type="button" hidden>Générer PDF</button>
+<script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="anim.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 

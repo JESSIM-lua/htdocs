@@ -1,0 +1,14 @@
+$_SESSION["couleur"] = $_POST["couleur"];
+    // var_dump()
+    // echo 'Ce contrat est fait ce jour  ';
+    // $date = '<input type="date">';
+    // echo $date;
+    // $date = '<p id="date"></p>';
+    // echo $date;
+    // echo ' copies originales, entre';
+    // $nom1 = '<input type="text">';
+    // $nom2 = '<input type="text">';
+    // $nom3 = '<input type="text">';
+    // $nom4 = '<input type="text">';
+    // echo ': ' . $nom1 . ',' . $nom2 . ',' . $nom3 . 'et' . $nom4;
+    // echo '<button type="button"><a href="index.php">Valider le Formulaire</a></button>';
